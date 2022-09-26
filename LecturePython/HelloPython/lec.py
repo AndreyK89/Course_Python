@@ -294,8 +294,8 @@
 # print(colors == ['red', 'green', 'blue', 'gray']) # True
 # colors.remove('red') #del colors[0] # удалить элемент
 
-                        #Функции
-                        #Это фрагмент программы, используемый многократно
+             #Функции
+             #Это фрагмент программы, используемый многократно
 # def function_name(x):
     # body line 1
     # . . .
