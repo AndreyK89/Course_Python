@@ -4,12 +4,13 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-def sum_odd_index(lst):
-    s = 0
+
+def sum_element(lst):
+    sum = 0
     for i in range(len(lst)):
         if i % 2 != 0:
-            s += lst[i]
-    print(f"Сумма элементов на нечетных позициях = {s}")
+            sum += lst[i]
+    print(f"Сумма элементов на нечетных позициях = {sum}")
 
 lst = [2, 3, 5, 9, 3]
-sum_odd_index(lst)
+sum_element(lst)
