@@ -13,4 +13,4 @@ def conversion_binary(number):
     return binary_number
 
 number = int(input('Введите число: '))
-print(conversion_binary(number))
+print(conversion_binary(number)) 
