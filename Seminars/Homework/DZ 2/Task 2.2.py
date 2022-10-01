@@ -3,7 +3,7 @@
 # Пример:
 # - пусть n = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-n = int(input('Введите число : '))
+n = int(input('Введите число n : '))
 first_number = 1
 composition = []
 for i in range(1, n+1):
