@@ -4,16 +4,6 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
-# def sum_element(lst):
-#     sum = 0
-#     for i in range(len(lst)):
-#         if i%2 !=0:
-#             sum += lst[i]
-#     return sum
-#
-# lst_numbers = [2, 4, 5, 9, 3]
-# print(f"Сумма равна: {sum_element(lst_numbers)}")
-
 def sum_odd_index(lst):
     s = 0
     for i in range(len(lst)):
