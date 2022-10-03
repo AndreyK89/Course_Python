@@ -5,12 +5,18 @@
 # - 3 -> 11
 # - 2 -> 10
 
-def conversion_binary(number):
-    binary_number = ''
-    while number !=0:
-        binary_number = str(number%2) + binary_number
-        number //=2
-    return binary_number
+# Вариант 1 :
+# def conversion_binary(number):
+#     binary_number = ''
+#     while number !=0:
+#         binary_number = str(number%2) + binary_number
+#         number //=2
+#     return binary_number
+#
+# number = int(input('Введите число: '))
+# print(conversion_binary(number))
+
+# Вариант 2 :
 
 number = int(input('Введите число: '))
-print(conversion_binary(number)) 
+print('{0:b}'.format(number))
