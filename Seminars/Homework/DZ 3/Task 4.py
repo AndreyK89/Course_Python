@@ -6,6 +6,7 @@
 # - 2 -> 10
 
 # Вариант 1 :
+
 # def conversion_binary(number):
 #     binary_number = ''
 #     while number !=0:
