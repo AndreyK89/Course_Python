@@ -16,7 +16,7 @@ def move_player(sign):
         try:
             move = int(move)
         except:
-            print('Нужно ввести число.')
+            print('Некорректный ввод. Вы уверены, что ввели число? Нужно ввести ЧИСЛО, номер ячейки!!!')
         if move >= 1 and move <= 9:
             if str(board[move - 1]) not in 'XO':
                 board[move - 1] = sign
@@ -24,7 +24,7 @@ def move_player(sign):
             else:
                 print('Эта ячейка уже занята.')
         else:
-            print('Введите число от 1 до 10.')
+            print('Некорректный ввод. Введите число от 1 до 9.')
 
 
 def control_win(board):
@@ -51,7 +51,7 @@ while not win:
     if count > 4:
         value = control_win(board)
         if value:
-            print(value + ' выиграл.')
+            print(' Ура! Победил: ' + value)
             win = True
     if count == 9 and win == False:
         print('Ничья.')
