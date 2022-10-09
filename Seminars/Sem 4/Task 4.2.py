@@ -5,7 +5,7 @@ a = int(input("Введите значение a = "))
 b = int(input("Введите значение b = "))
 c = int(input("Введите значение c = "))
 D = b ** 2 - 4 * a * c
-print(f'Discriminant = {D}')
+print(f'Дискриминант = {D}')
 if D < 0:
   print("Корней нет")
 elif D == 0:
@@ -14,5 +14,5 @@ elif D == 0:
 else:
   x1 = (-b + math.sqrt(D)) / (2 * a)
   x2 = (-b - math.sqrt(D)) / (2 * a)
-  print(f'Root 1 = {x1}')
-  print(f'Root 1 = {x2}')
+  print(f'Корень 1 = {x1}')
+  print(f'Корень 2 = {x2}')
