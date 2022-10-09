@@ -16,7 +16,7 @@ def move_player(sign):
         try:
             move = int(move)
         except:
-            print('Некорректный ввод. Вы уверены, что ввели число? Нужно ввести ЧИСЛО, номер ячейки!!!')
+            print('Некорректный ввод. Вы ввели не число!!! Пожалуйста введите ЧИСЛО, номер ячейки!!!')
         if move >= 1 and move <= 9:
             if str(board[move - 1]) not in 'XO':
                 board[move - 1] = sign
