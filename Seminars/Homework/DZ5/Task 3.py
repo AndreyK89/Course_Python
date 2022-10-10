@@ -31,6 +31,6 @@ def decoding(data):
     return res
 
 
-s = input("Введите текст для сжатия данных: ")
-print(f"Данные после сжатия: {rle_coding(s)}")
-print(f"Данные после дешифровки: {decoding(rle_coding(s))}")
+string = input("Введите текст для сжатия данных: ")
+print(f"Данные после сжатия: {rle_coding(string)}")
+print(f"Данные после дешифровки: {decoding(rle_coding(string))}")
