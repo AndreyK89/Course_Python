@@ -23,7 +23,7 @@ def decoding(data):
     number = ''
     res = ''
     for i in range(len(data)):
-        if not data[i].isalpha():
+        if not data[i].isalpha():    # Метод .isalpha() проверяем что строка состоит только из букв.
             number += data[i]
         else:
             res = res + data[i] * int(number)
@@ -31,6 +31,6 @@ def decoding(data):
     return res
 
 
-s = input("Введите текст для сжатия данных: ")
-print(f"Данные после сжатия: {rle_coding(s)}")
-print(f"Данные после дешифровки: {decoding(rle_coding(s))}")
+string = input("Введите текст для сжатия данных: ")
+print(f"Данные после сжатия: {rle_coding(string)}")
+print(f"Данные после дешифровки: {decoding(rle_coding(string))}")

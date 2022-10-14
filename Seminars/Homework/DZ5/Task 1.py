@@ -17,14 +17,14 @@ def input_dat(name):
         x = int(input(f"Игрок {name}, можно взять не более 28 конфет: "))
     return x
 
-def p_print(name, k, counter, value):
+def p_print(name, k, counter, value):    # Функция pprint() печатает отформатированное представление объекта.
     print("=" * 58)
     print(f"Игрок {name}, взял {k}, теперь у него {counter}. Осталось на столе {value} конфет.")
 
 player1 = input("Введите имя первого игрока: ")
 player2 = input("Введите имя второго игрока: ")
 candies = int(input("Введите количество конфет на столе: "))  #  2021 конфет, очень долго играть, сделал рандом.
-turn = randint(0,2)    # очередность
+turn = randint(0,2)    # рандомная очередность хода
 if turn:
     print("=" * 44)
     print(f"Бросаем жребий...Первый ходит игрок {player1}.")
