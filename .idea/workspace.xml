@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffa68f80-c50f-415f-9ce9-9e612704747c" name="Changes" comment="Add README.md">
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/logger.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/model_div.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/model_mult.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/model_sub.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/model_sum.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LecturePython/HelloPython/Calc/user_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminars/Homework/DZ5/Task 1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seminars/Homework/DZ5/Task 1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seminars/Homework/DZ5/Task 3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seminars/Homework/DZ5/Task 3.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Seminars/Homework/DZ5/Task 2.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2FBIROYntsaOllu9MpfPLnC86DJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Download Shared Index&quot;: &quot;Shared indexes available&quot;,
+    &quot;Notification.DoNotAsk-Download Shared Index&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/BETEPOK/Documents/Start Python/Send_to_Github&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BETEPOK\Documents\Start Python\Send_to_Github\LecturePython\HelloPython\join_job" />
+      <recent name="C:\Users\BETEPOK\Documents\Start Python\Send_to_Github\LecturePython\HelloPython\Calc" />
+      <recent name="C:\Users\BETEPOK\Documents\Start Python\Send_to_Github\Seminars\Homework\DZ 6" />
+      <recent name="C:\Users\BETEPOK\Documents\Start Python\Send_to_Github\LecturePython\HelloPython\lec_4" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="Task 4" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Send_to_Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seminars/Homework/DZ 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminars/Homework/DZ 3/Task 4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="controller" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Send_to_Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LecturePython/HelloPython/Calc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LecturePython/HelloPython/Calc/controller.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logger" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Send_to_Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LecturePython/HelloPython/join_job" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LecturePython/HelloPython/join_job/logger.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Send_to_Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LecturePython/HelloPython/join_job" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LecturePython/HelloPython/join_job/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Send_to_Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LecturePython/HelloPython/Calc" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LecturePython/HelloPython/Calc/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="user_interface" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Send_to_Github" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LecturePython/HelloPython/join_job" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LecturePython/HelloPython/join_job/user_interface.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.controller" />
+        <item itemvalue="Python.user_interface" />
+        <item itemvalue="Python.logger" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffa68f80-c50f-415f-9ce9-9e612704747c" name="Changes" comment="" />
+      <created>1663959041399</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663959041399</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add Task 3">
+      <created>1663963497087</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1663963497087</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add Task 1">
+      <created>1663964442633</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1663964442633</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add Task 1">
+      <created>1663964484538</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663964484538</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add Task 1">
+      <created>1663964861362</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1663964861362</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add Task 3">
+      <created>1663965134426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1663965134426</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add Task 4">
+      <created>1663965826904</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663965826904</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add Task 5">
+      <created>1663966706182</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1663966706182</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add lrc.py">
+      <created>1664126370035</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1664126370035</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add Task 2">
+      <created>1664212563108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1664212563108</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add Task 2.2">
+      <created>1664305970524</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664305970524</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add Task 2.3">
+      <created>1664307714122</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1664307714122</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Add Task 2.1">
+      <created>1664311608695</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664311608695</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add Task 2.1">
+      <created>1664311722607</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1664311722607</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add Task 2.5">
+      <created>1664476640907</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664476640907</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Add Task 2.4">
+      <created>1664476665367</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1664476665367</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Add Task 3.1">
+      <created>1664476734371</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1664476734371</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add Task 3.2">
+      <created>1664476748655</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1664476748655</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Add Task 1">
+      <created>1664648439074</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1664648439074</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add Task 2">
+      <created>1664649383683</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664649383683</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Add Task 3">
+      <created>1664650175087</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1664650175087</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add lec_2.py">
+      <created>1664651576154</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1664651576154</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Add Task 4">
+      <created>1664652201018</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1664652201018</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Add Task 5">
+      <created>1664657388753</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664657388753</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Add Sem 4">
+      <created>1664822291383</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1664822291383</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Add Task 4">
+      <created>1664826105400</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1664826105400</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add Task 1">
+      <created>1665082113396</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1665082113397</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add Task 2">
+      <created>1665082142436</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1665082142436</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Add Task 3">
+      <created>1665082168968</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1665082168968</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Add Task 3">
+      <created>1665254521724</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665254521724</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Add Task 2">
+      <created>1665257817736</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1665257817736</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Add Task 5.1">
+      <created>1665334238030</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1665334238030</updated>
+    </task>
+    <task id="LOCAL-00032" summary="Add Task 5.2">
+      <created>1665334256916</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1665334256916</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add Task 2">
+      <created>1665336370487</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1665336370487</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add Task 2">
+      <created>1665336974809</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1665336974809</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Add Task 1">
+      <created>1665368439141</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1665368439141</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add Task 1">
+      <created>1665421234640</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1665421234640</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add Task 6.1">
+      <created>1665772152354</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1665772152354</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add Task 6.2">
+      <created>1665772904869</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1665772904869</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Add Task 6.3">
+      <created>1665774480885</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1665774480885</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Add join_job">
+      <created>1665949068938</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1665949068938</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add README.md">
+      <created>1665951535653</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1665951535653</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add lrc.py" />
+    <MESSAGE value="Add Task 2.2" />
+    <MESSAGE value="Add Task 2.3" />
+    <MESSAGE value="Add Task 2.1" />
+    <MESSAGE value="Add Task 2.5" />
+    <MESSAGE value="Add Task 2.4" />
+    <MESSAGE value="Add Task 3.1" />
+    <MESSAGE value="Add Task 3.2" />
+    <MESSAGE value="Add lec_2.py" />
+    <MESSAGE value="Add Task 5" />
+    <MESSAGE value="Add Sem 4" />
+    <MESSAGE value="Add Task 4" />
+    <MESSAGE value="Add Task 3" />
+    <MESSAGE value="Add Task 5.1" />
+    <MESSAGE value="Add Task 5.2" />
+    <MESSAGE value="Add Task 2" />
+    <MESSAGE value="Add Task 1" />
+    <MESSAGE value="Add Task 6.1" />
+    <MESSAGE value="Add Task 6.2" />
+    <MESSAGE value="Add Task 6.3" />
+    <MESSAGE value="Add join_job" />
+    <MESSAGE value="Add README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add README.md" />
+  </component>
+</project>
