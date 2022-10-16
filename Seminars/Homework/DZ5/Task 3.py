@@ -23,7 +23,9 @@ def decoding(data):
     number = ''
     res = ''
     for i in range(len(data)):
-        if not data[i].isalpha():    # Метод .isalpha() проверяем что строка состоит только из букв.
+        if not data[i].isalpha():   # Метод .isalpha() проверяем что строка состоит только из букв.
+
+
             number += data[i]
         else:
             res = res + data[i] * int(number)
