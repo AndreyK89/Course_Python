@@ -1,8 +1,8 @@
 from datetime import datetime as dt
 
-def log_to_file(arg1, arg2, operation, result):
-    path = 'logging.csv'                         # Формат файла ".csv" - взял просто из примеров
-    time_sign = dt.now().strftime('%D %H:%M')
-    f = open(path, 'a')
-    f.write(f'{time_sign}--> {arg1} {operation} {arg2} = {result}\n')
-    f.close()
+def logger(data):
+    time = dt.now().strftime('%D %H:%M')
+    with open('log.csv', 'a') as file:
+        # file.write((f'\n{data, time}.')      # Вывод в лог в 1 строку.
+        file.write((f'\n{data}, \n{time}.')    # Вывод в лог в 2 строки.
+                        .format(data, time))
