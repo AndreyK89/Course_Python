@@ -1,4 +1,5 @@
 import user_interface as user
+import logger as log
 import model_sum as model
 import model_sub
 import model_mult
@@ -23,17 +24,22 @@ def button_click():
         model.init(value_a, value_b)
         result = model.do_it()
         user.view_data(result)
+        log.logger(f'{value_a}+{value_b}={result}')
 
     if value_model ==2:
-        model_div.init(value_a, value_b)
-        result = model_div.do_it()
+        model_sub.init(value_a, value_b)
+        result = model_sub.do_it()
         user.view_data(result)
+        log.logger(f'{value_a}-{value_b}={result}')
 
     if value_model == 3:
         model_mult.init(value_a, value_b)
         result = model_mult.do_it()
         user.view_data(result)
+        log.logger(f'{value_a}*{value_b}={result}')
+
     if value_model == 4:
-        model_sub.init(value_a, value_b)
-        result = model_sub.do_it()
+        model_div.init(value_a, value_b)
+        result = model_div.do_it()
         user.view_data(result)
+        log.logger(f'{value_a}/{value_b}={result}')
