@@ -40,3 +40,6 @@
 - Имя (firstname);
 - Фамилия (lastname);
 - новых данных контакта (newcontact).
+
+### Блок-схема алгоритм в файле :
+- PhoneBook_algorithm.drawio.png
