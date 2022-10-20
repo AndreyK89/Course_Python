@@ -10,7 +10,7 @@ myfile = open(filename, "a+")
 myfile.close
 
 
-# метод главного меню
+# модуль  главного меню
 def main_menu():
     print("\nГЛАВНОЕ МЕНЮ\n")
     print("1. Просмотреть все существующие контакты")
@@ -44,7 +44,7 @@ def main_menu():
         main_menu()
 
 
-# метод поиска
+# модуль  поиска
 def searchcontact():
     searchname = input("Введите ИМЯ для поиска контакта: ")
     remname = searchname[1:]
@@ -64,7 +64,7 @@ def searchcontact():
         print(f"Контакт {searchname} не найден в справочнике, сожалею.")
 
 
-# имя
+# модуль имя
 def input_firstname():
     first = input("Введите ваше имя: ")
     remfname = first[1:]
@@ -72,14 +72,14 @@ def input_firstname():
     return firstchar.upper() + remfname
 
 
-# фамилия
+# модуль фамилия
 def input_lastname():
     last = input("Введите вашу фамилию: ")
     remlname = last[1:]
     firstchar = last[0]
     return firstchar.upper() + remlname
 
-# сохранение новых данных контакта
+# модуль новых данных контакта
 def newcontact():
     firstname = input_firstname()
     lastname = input_lastname()
