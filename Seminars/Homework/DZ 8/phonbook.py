@@ -85,8 +85,8 @@ def newcontact():
     lastname = input_lastname()
     phoneNum = input("Введите ваш номер телефона: ")
     description = input("Введите описание: ")
-    contactDetails = (f"\n" + firstname + " " + lastname + ", " + phoneNum + ", " + description + ".\n")    # Вывод в лог в 1 строку.
-    # contactDetails = (f'\n  \n{firstname},\n  \n{lastname},\n  \n{phoneNum},\n  \n{description}.\n ')     # Вывод в лог в несколько строк.
+    # contactDetails = (f"\n" + firstname + " " + lastname + ", " + phoneNum + ", " + description + ".\n")                                      # Вывод в лог в 1 строку.
+    contactDetails = (f'\n  \nИмя : {firstname},\n  \nФамилия :  {lastname},\n  \nТелефон :  {phoneNum},\n \nОписание : {description}.\n ')     # Вывод в лог в несколько строк.
     myfile = open(filename, "a")
     myfile.write(contactDetails)
     print(f'Новая запись в телефонном справочнике: \n {contactDetails }\n:) успешно создана!')
