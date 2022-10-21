@@ -4,7 +4,7 @@ from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
 
 from kivy.uix.button import Button
-from kivy.config import Config                                # Импортируем необходимые нам элементы.
+from kivy.config import Config                                # Импортируем необходимые модули.
 
 Config.set("graphics", "resizable", "0")
 Config.set("graphics", "width", "300")
