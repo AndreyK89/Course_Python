@@ -1,4 +1,4 @@
-from kivy.app import App                                       # На базе библиотеки kivy.
+from kivy.app import App                                       # На базе библиотеки kivy. Создание мобильных приложений на Python.
 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.gridlayout import GridLayout
