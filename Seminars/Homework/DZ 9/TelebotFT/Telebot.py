@@ -16,11 +16,11 @@ bot = telebot.TeleBot('5671094069:AAE8MGojJf9ScZm_tP8bJMpp5BbtkbwN47E')
 def start(m, res=False):
         # Добавляем две кнопки
         markup=types.ReplyKeyboardMarkup(resize_keyboard=True)
-        item1=types.KeyboardButton("Факт")
-        item2=types.KeyboardButton("Поговорка")
+        item1=types.KeyboardButton("Факт о Тобольске")
+        item2=types.KeyboardButton("Поговорка Тобольской губернии")
         markup.add(item1)
         markup.add(item2)
-        bot.send_message(m.chat.id, 'Нажми: \nФакт для получения интересного факта о Тобольске\nПоговорка Тобольской губернии — для получения мудрой цитаты ',  reply_markup=markup)
+        bot.send_message(m.chat.id, 'Нажми: \n \nФакт для получения интересного факта о Тобольске\n \nПоговорка Тобольской губернии — для получения мудрой цитаты ',  reply_markup=markup)
 # Получение сообщений от юзера
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
