@@ -2,11 +2,11 @@ import telebot
 import random
 from telebot import types
 # Загружаем список интересных фактов
-f = open('data/facts.txt', 'r', encoding='UTF-8')
+f = open('facts.txt', 'r', encoding='UTF-8')
 facts = f.read().split('\n')
 f.close()
 # Загружаем список поговорок
-f = open('data/thinks.txt', 'r', encoding='UTF-8')
+f = open('thinks.txt', 'r', encoding='UTF-8')
 thinks  = f.read().split('\n')
 f.close()
 # Создаем бота
@@ -20,7 +20,7 @@ def start(m, res=False):
         item2=types.KeyboardButton("Поговорка")
         markup.add(item1)
         markup.add(item2)
-        bot.send_message(m.chat.id, 'Нажми: \nФакт для получения интересного факта\nПоговорка — для получения мудрой цитаты ',  reply_markup=markup)
+        bot.send_message(m.chat.id, 'Нажми: \nФакт для получения интересного факта о Тобольске\nПоговорка Тобольской губернии — для получения мудрой цитаты ',  reply_markup=markup)
 # Получение сообщений от юзера
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
