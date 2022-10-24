@@ -8,16 +8,16 @@ from kivy.config import Config                                # Импортир
 
 Config.set("graphics", "resizable", "0")
 Config.set("graphics", "width", "300")
-Config.set("graphics", "height", "300")                       # Задаем параметры нашего окна.
+Config.set("graphics", "height", "300")                       # Модуль: параметры  окна.
 
 
-class MainApp(App):                                           #  Создадим класс  приложения, MainApp.
+class MainApp(App):                                           #  Модуль: класс  приложения, MainApp.
                                                               # Чтобы при каждом новом ходе крестик сменялся ноликом и наоборот.
     def __init__(self):
         super().__init__()
         self.switch = True
 
-    def tic_tac_toe(self, arg):                               # Функция логики для приложения.
+    def tic_tac_toe(self, arg):                               # Модуль функции логики для приложения.
         arg.disabled = True
         arg.text = 'X' if self.switch else 'O'
         self.switch = not self.switch
@@ -32,7 +32,7 @@ class MainApp(App):                                           #  Создади�
 
         color = [0, 1, 0, 1]
 
-        for item in coordinate:                                # Цикл победных комбинаций нажатых кнопок.
+        for item in coordinate:                                # Модуль цикла победных комбинаций нажатых кнопок.
             if vector(item).count('X') == 3 or vector(item).count('O') == 3:
                 win = True
                 for i in item:
@@ -41,7 +41,7 @@ class MainApp(App):                                           #  Создади�
                     button.disabled = True
                 break
 
-    def restart(self, arg):                                     # restart: функция, перезапуска игры.
+    def restart(self, arg):                                     # Модуль restart: функция, перезапуска игры.
         self.switch = True
 
         for button in self.buttons:
@@ -50,11 +50,11 @@ class MainApp(App):                                           #  Создади�
             button.disabled = False
 
     def build(self):
-        self.title = "Крестики-нолики"                           # self.title это окно приложения, контейнер для кнопок.
+        self.title = "Крестики-нолики"                           # Модуль self.title это окно приложения, контейнер для кнопок.
 
-        root = BoxLayout(orientation="vertical", padding=5)
+        root = BoxLayout(orientation="vertical", padding=5)      # BoxLayout: модуль виртуального окружения.
 
-        grid = GridLayout(cols=3)
+        grid = GridLayout(cols=3)                                # GridLayout: модуль виртуального окружения.
         self.buttons = []
         for _ in range(9):
             button = Button(
