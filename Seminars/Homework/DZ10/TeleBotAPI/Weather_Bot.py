@@ -4,12 +4,12 @@ import requests as req                                                  # Имп
 from geopy import geocoders
 from os import environ
 
-token = environ['token_bot']
-token_accu = environ['token_accu']
-token_yandex = environ['token_yandex']
+token = environ['token_bot']                                            # Бот от телеграмма
+token_accu = environ['token_accu']                                      # Доступ к api accuweather
+token_yandex = environ['token_yandex']                                  # Доступ к api yandex.weather
 
 
-def code_location(latitude: str, longitude: str, token_accu: str):
+def code_location(latitude: str, longitude: str, token_accu: str):      # Модуль получения координат города
     url_location_key = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=' \
                        f'{token_accu}&q={latitude},{longitude}&language=ru'
     resp_loc = req.get(url_location_key, headers={"APIKey": token_accu})
@@ -18,7 +18,7 @@ def code_location(latitude: str, longitude: str, token_accu: str):
     return code
 
 
-def weather(code_loc: str, token_accu: str):
+def weather(code_loc: str, token_accu: str):                           # Модуль получения кода города, по координатам
     url_weather = f'http://dataservice.accuweather.com/forecasts/v1/hourly/12hour/{code_loc}?' \
                   f'apikey={token_accu}&language=ru&metric=True'
     response = req.get(url_weather, headers={"APIKey": token_accu})
@@ -33,7 +33,7 @@ def weather(code_loc: str, token_accu: str):
     return dict_weather
 
 
-def print_weather(dict_weather, message):
+def print_weather(dict_weather, message):                          # Сообщения для user
     bot.send_message(message.from_user.id, f'Разрешите доложить, Ваше сиятельство!'
                                            f' Температура сейчас {dict_weather["сейчас"]["temp"]}!'
                                            f' А на небе {dict_weather["сейчас"]["sky"]}.'
@@ -60,14 +60,14 @@ def print_yandex_weather(dict_weather_yandex, message):
                                            f'{dict_weather_yandex["link"]}')
 
 
-def geo_pos(city: str):
+def geo_pos(city: str):                                                 # Модуль получения координат города
     geolocator = geocoders.Nominatim(user_agent="telebot")
     latitude = str(geolocator.geocode(city).latitude)
     longitude = str(geolocator.geocode(city).longitude)
     return latitude, longitude
 
 
-def yandex_weather(latitude, longitude, token_yandex: str):
+def yandex_weather(latitude, longitude, token_yandex: str):            # Модуль получения кода по координатам города
     url_yandex = f'https://api.weather.yandex.ru/v2/informers/?lat={latitude}&lon={longitude}&[lang=ru_RU]'
     yandex_req = req.get(url_yandex, headers={'X-Yandex-API-Key': token_yandex}, verify=False)
     conditions = {'clear': 'ясно', 'partly-cloudy': 'малооблачно', 'cloudy': 'облачно с прояснениями',
