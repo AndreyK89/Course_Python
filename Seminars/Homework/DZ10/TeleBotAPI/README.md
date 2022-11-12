@@ -21,7 +21,7 @@
 ## Бот по названию города берет данные по погоде на openweather и возвращает сводку.
 
 ## Ссылка на бота:
-https://t.me/Weather_API_TeleBot
+### https://t.me/Weather_API_TeleBot
 
 ![](Weather_telebot.jpg)
 
