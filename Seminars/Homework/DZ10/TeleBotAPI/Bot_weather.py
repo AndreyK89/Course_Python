@@ -163,3 +163,17 @@ def get_text_messages(message):
     else:
         try:
             city = message.text
+            bot.send_message(message.from_user.id, f'Привет {message.from_user.first_name}! Твой город {city}')
+            latitude, longitude = geo_pos(city)
+            code_loc = code_location(latitude, longitude, token_accu)
+            you_weather = weather(code_loc, token_accu)
+            print_weather(you_weather, message)
+            yandex_weather_x = yandex_weather(latitude, longitude, token_yandex)
+            print_yandex_weather(yandex_weather_x, message)
+        except AttributeError as err:
+            bot.send_message(message.from_user.id, f'{message.from_user.first_name}! Не вели казнить,'
+                                                   f' вели слово молвить! Я не нашел такого города!'
+                                                   f'И получил ошибку {err}, попробуй другой город')
+
+
+bot.polling(none_stop=True)
