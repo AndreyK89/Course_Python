@@ -3,12 +3,12 @@ import telebot
 import os
 import time
 
-config_dict = get_default_config()
-config_dict['language'] = 'ru'
-owmToken = os.getenv('374db0bd2183096bd1afb5980354910c')                        # Доступ к прогнозу OWM
-owm = pyowm.OWM(owmToken, language='ru')
+# config_dict = get_default_config()
+# config_dict['language'] = 'ru'
 botToken = os.getenv('5709451393:AAEH9VpfRC8xyqVp26xkhCBEPAcsnjhsHDU')          # Telegram bot
 bot = telebot.TeleBot(botToken)
+owmToken = os.getenv('374db0bd2183096bd1afb5980354910c')                        # Доступ к прогнозу OWM
+owm = pyowm.OWM(owmToken, language='ru')
 
 
 @bot.message_handler(content_types=['text'])                                    # Модуль общения с ботом
