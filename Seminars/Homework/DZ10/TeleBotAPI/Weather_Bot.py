@@ -1,17 +1,17 @@
-import pyowm                                                             # Импортируем модули
+import pyowm                                                                  # Импортируем модули
 import telebot
 import os
 import time
 
 # config_dict = get_default_config()
 # config_dict['language'] = 'ru'
-owmToken = os.getenv('YOUR_OWM_TOKEN')                                   # Доступ к прогнозу OWM
+owmToken = os.getenv('374db0bd2183096bd1afb5980354910c')                        # Доступ к прогнозу OWM
 owm = pyowm.OWM(owmToken, language='ru')
-botToken = os.getenv('YOUR_TELEGRAM_BOT_TOKEN')                          # Telegram bot
+botToken = os.getenv('5709451393:AAEH9VpfRC8xyqVp26xkhCBEPAcsnjhsHDU')          # Telegram bot
 bot = telebot.TeleBot(botToken)
 
 
-@bot.message_handler(content_types=['text'])                            # Модуль общения с ботом
+@bot.message_handler(content_types=['text'])                                    # Модуль общения с ботом
 def send_message(message):
     """Send the message to user with the weather"""
 
