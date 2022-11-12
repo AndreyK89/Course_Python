@@ -1,47 +1,67 @@
-import pyowm                                                                  # Импортируем модули
-import telebot
-import os
-import time
-
-# config_dict = get_default_config()
-# config_dict['language'] = 'ru'
-botToken = os.getenv('5709451393:AAEH9VpfRC8xyqVp26xkhCBEPAcsnjhsHDU')          # Telegram bot
-bot = telebot.TeleBot(botToken)
-owmToken = os.getenv('374db0bd2183096bd1afb5980354910c')                        # Доступ к прогнозу OWM
-owm = pyowm.OWM(owmToken, language='ru')
+import requests
+import datetime
+from aiogram import Bot, types                                     # Импорт модулей
+from aiogram.dispatcher import Dispatcher
+from aiogram.utils import executor
 
 
-@bot.message_handler(content_types=['text'])                                    # Модуль общения с ботом
-def send_message(message):
-    """Send the message to user with the weather"""
+open_weather_token = "374db0bd2183096bd1afb5980354910c"            # Доступ к open_weather
+tg_bot_token = "5709451393:AAEH9VpfRC8xyqVp26xkhCBEPAcsnjhsHDU"
 
-    if message.text.lower() == "/start" or message.text.lower() == "/help":
-        bot.send_message(message.from_user.id, "Здравствуйте. Вы можете узнать здесь погоду. Просто напишите название города." + "\n")
-    else:
-        try:
-            observation = owm.weather_at_place(message.text)
-            weather = observation.get_weather()
-            temp = weather.get_temperature("celsius")["temp"]
-            temp = round(temp)
-            print(time.ctime(), "User id:", message.from_user.id)
-            print(time.ctime(), "Message:", message.text.title(), temp, "C", weather.get_detailed_status())
-
-            answer = "В городе " + message.text.title() + " сейчас " + weather.get_detailed_status() + "." + "\n"
-            answer += "Температура около: " + str(temp) + " С" + "\n\n"
-            if temp < -10:
-                answer += "Пипец как холодно, одевайся как танк!"
-            elif temp < 10:
-                answer += "Холодно, одевайся теплее."
-            elif temp > 25:
-                answer += "Жарень."
-            else:
-                answer += "На улице вроде норм!!!"
-        except Exception:
-            answer = "Не найден город, попробуйте ввести название снова.\n"
-            print(time.ctime(), "User id:", message.from_user.id)
-            print(time.ctime(), "Message:", message.text.title(), 'Error')
-
-        bot.send_message(message.chat.id, answer)
+bot = Bot(token=tg_bot_token)                                      # Запуск бота
+dp = Dispatcher(bot)
 
 
-bot.polling(none_stop=True)                                               # Запускаем бота
+@dp.message_handler(commands=["start"])
+async def start_command(message: types.Message):
+    await message.reply("Привет! Напиши мне название города и я пришлю сводку погоды!")
+
+
+@dp.message_handler()                                            # Модуль общения с ботом
+async def get_weather(message: types.Message):
+    code_to_smile = {
+        "Clear": "Ясно \U00002600",
+        "Clouds": "Облачно \U00002601",
+        "Rain": "Дождь \U00002614",
+        "Drizzle": "Дождь \U00002614",
+        "Thunderstorm": "Гроза \U000026A1",
+        "Snow": "Снег \U0001F328",
+        "Mist": "Туман \U0001F32B"
+    }
+
+    try:
+        r = requests.get(
+            f"http://api.openweathermap.org/data/2.5/weather?q={message.text}&appid={open_weather_token}&units=metric"
+        )
+        data = r.json()
+
+        city = data["name"]
+        cur_weather = data["main"]["temp"]
+
+        weather_description = data["weather"][0]["main"]
+        if weather_description in code_to_smile:
+            wd = code_to_smile[weather_description]
+        else:
+            wd = "Посмотри в окно, не пойму что там за погода!"
+
+        humidity = data["main"]["humidity"]
+        pressure = data["main"]["pressure"]
+        wind = data["wind"]["speed"]
+        sunrise_timestamp = datetime.datetime.fromtimestamp(data["sys"]["sunrise"])
+        sunset_timestamp = datetime.datetime.fromtimestamp(data["sys"]["sunset"])
+        length_of_the_day = datetime.datetime.fromtimestamp(data["sys"]["sunset"]) - datetime.datetime.fromtimestamp(
+            data["sys"]["sunrise"])
+
+        await message.reply(f"**{datetime.datetime.now().strftime('%Y-%m-%d %H:%M')}**\n"
+              f"Погода в городе: {city}\nТемпература: {cur_weather}C° {wd}\n"
+              f"Влажность: {humidity}%\nДавление: {pressure} мм.рт.ст\nВетер: {wind} м/с\n"
+              f"Восход солнца: {sunrise_timestamp}\nЗакат солнца: {sunset_timestamp}\nПродолжительность дня: {length_of_the_day}\n"
+              f"**Хорошего дня!**"
+              )
+
+    except:
+        await message.reply("\U00002620 Проверьте название города \U00002620")
+
+
+if __name__ == '__main__':
+    executor.start_polling(dp)
