@@ -12,12 +12,12 @@ bot = Bot(token=tg_bot_token)                                      # Запус�
 dp = Dispatcher(bot)
 
 
-@dp.message_handler(commands=["start"])
+@dp.message_handler(commands=["start"])                            # Команда Старт
 async def start_command(message: types.Message):
     await message.reply("Привет! Напиши мне название города и я пришлю сводку погоды!")
 
 
-@dp.message_handler()                                            # Модуль общения с ботом
+@dp.message_handler()                                             # Модуль общения с ботом
 async def get_weather(message: types.Message):
     code_to_smile = {
         "Clear": "Ясно \U00002600",
